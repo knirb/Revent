@@ -6,6 +6,7 @@ body {
 
 .full-page {
   height: 100vh;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
 }
@@ -40,7 +41,7 @@ body {
 }
 
 .nav-logo {
-  font-size: 5vh;
+  font-size: 2rem;
 }
 
 .main-nav a {
@@ -215,7 +216,7 @@ hr {
 .flex-column {
   flex-direction: column;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 812px) {
   .container {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -321,6 +322,7 @@ hr {
   ul:last-child {
     margin-right: 0;
   }
+
   .contact .img-container {
     border: solid 0.5rem rgb(31, 138, 115);
     height: 12rem;
