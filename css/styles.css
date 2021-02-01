@@ -13,7 +13,6 @@ body {
 .main-nav {
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
-  background-color: rgb(31, 138, 115);
 }
 
 .container {
@@ -41,21 +40,17 @@ body {
 }
 
 .nav-logo {
-  font-size: 2.5rem;
-}
-.nav-logo:hover {
-  color: rgb(230, 230, 230);
+  font-size: 5vh;
 }
 
 .main-nav a {
   display: flex;
   color: rgb(233, 233, 233);
   text-decoration: none;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-right: 2rem;
   align-items: center;
 }
-.main-nav a:hover {
+.nav-list a:hover {
   color: rgb(180, 180, 180);
 }
 
@@ -75,8 +70,6 @@ section.description p {
 section.description {
   flex-grow: 1;
   overflow: hidden;
-  background-color: rgb(233, 233, 233);
-  color: rgb(31, 138, 115);
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -90,37 +83,27 @@ section.description em {
 }
 
 .articles {
-  background-color: rgb(31, 138, 115);
-  color: rgb(233, 233, 233);
   display: flex;
-  padding-top: 5rem;
   flex-direction: column;
   font-weight: 300;
   font-size: 2rem;
-  flex-grow: 1;
 }
-
+hr {
+  width: 100%;
+}
 .articles p {
   width: 55%;
-  border: solid 2px rgb(233, 233, 233);
   border-radius: 4rem;
   padding: 5%;
   text-align: center;
   line-height: 2.5rem;
 }
 
-.sign-image {
-  left: -3rem;
-  max-width: 120% !important;
-}
 .articles article {
-  margin-top: 3rem;
-  padding-bottom: 3rem;
-  align-items: center;
+  margin-top: 5rem;
+  padding-bottom: 5rem;
   display: flex;
-  justify-content: space-between;
-  border-bottom: solid 2px rgba(220, 220, 220, 0.2);
-  min-width: 1000px;
+  justify-content: center;
 }
 
 .img-container {
@@ -130,11 +113,20 @@ section.description em {
   margin-bottom: auto;
   overflow: hidden;
   border-radius: 50%;
-  border: solid 3px rgb(233, 233, 233);
 }
 .img-container img {
   max-width: 100%;
   position: relative;
+}
+#design {
+  max-width: 85%;
+  left: 7.5%;
+  top: 7.5%;
+}
+#clock {
+  max-width: 85%;
+  left: 7.5%;
+  top: 7.5%;
 }
 
 ::-webkit-scrollbar {
@@ -175,7 +167,18 @@ section.description em {
   flex-direction: column;
   height: 100%;
   justify-content: center;
+  align-items: center;
 }
+
+.contacts-main h1 {
+  padding-bottom: 2rem;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .contact p {
   font-size: 1.5rem;
 }
@@ -187,6 +190,7 @@ section.description em {
   color: rgb(31, 138, 115);
   font-weight: 700;
   font-style: normal;
+  margin-right: 10px;
 }
 .stefan {
   position: relative;
@@ -195,7 +199,8 @@ section.description em {
 }
 .contact .img-container {
   border: solid 0.7rem rgb(31, 138, 115);
-  background-color: rgb(31, 138, 115);
+  height: 15rem;
+  width: 15rem;
 }
 .text-center {
   text-align: center;
@@ -209,4 +214,116 @@ section.description em {
 }
 .flex-column {
   flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    max-width: 670px;
+  }
+
+  section.description h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+  }
+  section.description p {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+
+  .articles p {
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+  }
+  .img-container {
+    width: 12rem;
+    height: 12rem;
+  }
+  .img-container img {
+    max-width: 100%;
+    position: relative;
+  }
+  hr {
+    width: 70%;
+  }
+  svg {
+    fill: currentColor;
+  }
+  .main-nav a {
+    display: flex;
+    color: rgb(233, 233, 233);
+    text-decoration: none;
+    margin-right: 1rem;
+    align-items: center;
+  }
+  ul:last-child {
+    margin-right: 0;
+  }
+  .contact .img-container {
+    border: solid 0.5rem rgb(31, 138, 115);
+    height: 12rem;
+    width: 12rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+  }
+
+  section.description h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+  }
+  section.description p {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+
+  .articles p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+
+  .img-container {
+    width: 7rem;
+    height: 7rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  .img-container img {
+    max-width: 100%;
+    position: relative;
+  }
+  hr {
+    width: 70%;
+  }
+  .main-nav a {
+    display: flex;
+    color: rgb(233, 233, 233);
+    text-decoration: none;
+    margin-right: 1rem;
+    align-items: center;
+  }
+  ul:last-child {
+    margin-right: 0;
+  }
+  .contact .img-container {
+    border: solid 0.5rem rgb(31, 138, 115);
+    height: 12rem;
+    width: 12rem;
+  }
 }
